@@ -19,7 +19,7 @@ partial class Index
     private Task HandleInput(ChangeEventArgs e)
     {
         filter = e.Value?.ToString();
-        if (filter?.Length > 2)
+        if (filter?.Length > 0)
         {
             if (allResources != null) resources = allResources.Where(r => r.Name.Contains(filter)).ToList();
         }
