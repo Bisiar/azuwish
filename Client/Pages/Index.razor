@@ -1,10 +1,11 @@
 ﻿@page "/"
 @inject HttpClient http
 
-<PageTitle>Tag Prefix</PageTitle>
+<PageTitle>AzUWish</PageTitle>
 
+<H2>Azure Name Helper</H2>
 <div class="autocomplete w-25">
-    <input @bind=selectedCustomerName @oninput=HandleInput class="form-control filter" />
+    <input @bind="selectedResourceName" @oninput="HandleInput" class="form-control filter"/>
     @if (resources is not null)
     {
         <ul class="options">
@@ -12,8 +13,10 @@
             {
                 @foreach (var resource in resources)
                 {
-                    <li class="option" @onclick=@(_ => SelectResource(resource.Id))>
+                    <li class="option" @onclick=@(_ => SelectResource(resource.Prefix))>
                         <span class="option-text">@resource.Name</span>
+                        <span class="option-text"> </span>
+                        <span class="option-text">@resource.Prefix</span>
                     </li>
                 }
             }
@@ -24,10 +27,10 @@
         </ul>
     }
 </div>
-@if (!string.IsNullOrWhiteSpace(selectedCustomerName))
+@if (!string.IsNullOrWhiteSpace(selectedResourceName))
 {
     <p class="mt-3">
-        Selected customer is @selectedCustomerName with ID <strong>@selectedCustomerId</strong>
+        Selected resource is @selectedResourceName with prefix <strong>@selectedResourcePrefix</strong>
     </p>
 }
 

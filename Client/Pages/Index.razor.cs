@@ -5,35 +5,43 @@ namespace BlazorBasic.Pages;
 
 partial class Index
 {
-    
-    List<Resource>? resources;
-    string? selectedCustomerId;
-    string? selectedCustomerName;
-    string? filter;
- 
-    
-    async Task HandleInput(ChangeEventArgs e)
+    private List<Resource>? allResources;
+    private string? filter;
+    private List<Resource>? resources;
+    private string? selectedResourcePrefix;
+    private string? selectedResourceName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        allResources = await http.GetFromJsonAsync<List<Resource>>($"/data/resources.json");
+    }
+
+    private Task HandleInput(ChangeEventArgs e)
     {
         filter = e.Value?.ToString();
         if (filter?.Length > 2)
         {
-            //resources = await http.GetFromJsonAsync<List<Resource>>($"/data/companyfilter?filter={filter}");
+            if (allResources != null) resources = allResources.Where(r => r.Name.Contains(filter)).ToList();
         }
         else
         {
             resources = null;
-            selectedCustomerName = selectedCustomerId = null;
+            selectedResourceName = selectedResourcePrefix = null;
         }
+
+        return Task.CompletedTask;
     }
 
-    private Task SelectResource(object resourceId)
+    private void SelectResource(string resourcePrefix)
     {
-        throw new NotImplementedException();
+        if (allResources != null) selectedResourcePrefix = allResources.FirstOrDefault(r => r.Name.Contains(resourcePrefix))?.Prefix;
     }
 }
 
 internal class Resource
 {
-    public string Id { get; set; }
     public string Name { get; set; }
+
+    public string NameSpace { get; set; }
+    public string Prefix { get; set; }
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "Azure Cognitive Search",
+    "NameSpace": "Microsoft.Search/searchServices",
+    "Prefix": "srch"
+  },
+  {
+    "Name": "Azure Cognitive Services",
+    "NameSpace": "Microsoft.CognitiveServices/accounts",
+    "Prefix": "cog"
+  },
+  {
+    "Name": "Azure Machine Learning workspace",
+    "NameSpace": "Microsoft.MachineLearningServices/workspaces",
+    "Prefix": "mlw"
+  },
+  {
+    "Name": "Azure Analysis Services server",
+    "NameSpace": "Microsoft.AnalysisServices/servers",
+    "Prefix": "as"
+  },
+  {
+    "Name": "Azure Databricks workspace",
+    "NameSpace": "Microsoft.Databricks/workspaces",
+    "Prefix": "dbw"
+  },
+  {
+    "Name": "Azure Data Explorer cluster",
+    "NameSpace": "Microsoft.Kusto/clusters",
+    "Prefix": "dec"
+  },
+  {
+    "Name": "Event Grid subscriptions",
+    "NameSpace": "Microsoft.EventGrid/eventSubscriptions",
+    "Prefix": "evgs"
+  },
+  {
+    "Name": "Event Grid topic",
+    "NameSpace": "Microsoft.EventGrid/domains/topics",
+    "Prefix": "evgt"
+  }
+]
