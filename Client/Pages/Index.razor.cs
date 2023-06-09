@@ -40,6 +40,7 @@ partial class Index
 
 internal class Resource
 {
+    public string Category { get; set; }
     public string Name { get; set; }
 
     public string NameSpace { get; set; }

@@ -3,7 +3,7 @@
 
 <PageTitle>AzUWish</PageTitle>
 
-<H2>Azure Name Helper</H2>
+<h2>Azure Name Helper</h2>
 <div class="autocomplete w-25">
     <input @bind="selectedResourceName" @oninput="HandleInput" class="form-control filter"/>
     @if (resources is not null)
@@ -11,11 +11,12 @@
         <ul class="options">
             @if (resources.Any())
             {
-                @foreach (var resource in resources)
+                @foreach (var resource in resources.OrderBy(r=>r.Category))
                 {
                     <li class="option" @onclick=@(_ => SelectResource(resource.Prefix))>
-     					<span class="option-text">@resource.Prefix</span>
- 	                    <span class="option-text">@resource.Name</span>                   
+                        <span class="option-text">@resource.Prefix</span>
+                        <span class="option-text">@resource.Name</span>
+                        <span class="option-text">@resource.Category</span>
                     </li>
                 }
             }
