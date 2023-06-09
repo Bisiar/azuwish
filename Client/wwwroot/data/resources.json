@@ -35,6 +35,55 @@
     "NameSpace": "Microsoft.Kusto/clusters",
     "Prefix": "dec"
   },
+
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Data Explorer cluster",
+    "NameSpace": "Microsoft.Kusto/clusters",
+    "Prefix": "dedb"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Data Factory",
+    "NameSpace": "Microsoft.DataFactory/factories",
+    "Prefix": "adf"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Digital Twin instance",
+    "NameSpace": "Microsoft.DigitalTwins/digitalTwinsInstances",
+    "Prefix": "dt"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Stream Analytics",
+    "NameSpace": "Microsoft.StreamAnalytics/cluster",
+    "Prefix": "asa"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Synapse Analytics Workspaces",
+    "NameSpace": "Microsoft.Synapse/workspaces",
+    "Prefix": "synw"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Synapse Analytics SQL Dedicated Pool",
+    "NameSpace": "icrosoft.Synapse/workspaces/sqlPools",
+    "Prefix": "syndp"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Name": "Azure Synapse Analytics Spark Pool",
+    "NameSpace": "Microsoft.Synapse/workspaces/sqlPools",
+    "Prefix": "synsp"
+  },
+
+
+
+
+
+
   {
     "Category": "Analytics and IoT",
     "Name": "Event Grid subscriptions",
