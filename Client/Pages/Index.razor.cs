@@ -5,44 +5,76 @@ namespace BlazorBasic.Pages;
 
 partial class Index
 {
-    private List<Resource>? allResources;
-    private string? filter;
-    private List<Resource>? resources;
-    private string? selectedResourcePrefix;
-    private string? selectedResourceName;
+    private List<Resource>? _allResources = new List<Resource>();
+    private string? _filter;
+    private List<Resource>? _resources = new List<Resource>();
+	private Resource? _selectedResource;
+    private string? _selectedResourcePrefix;
+
+    private string _selectResourceName;
+    //private string? _selectedResourceName;
+
+    private string SelectedResourceName
+    {
+        get => _selectedResource?.Name ?? string.Empty;
+        // set => _selectResourceName = value;
+    }
 
     protected override async Task OnInitializedAsync()
     {
-        allResources = await http.GetFromJsonAsync<List<Resource>>($"/data/resources.json");
+        _allResources = await http.GetFromJsonAsync<List<Resource>>($"/data/resources.json");
     }
 
-    private Task HandleInput(ChangeEventArgs e)
+    private void HandleInput(ChangeEventArgs e)
     {
-        filter = e.Value?.ToString();
-        if (filter?.Length > 0)
+        _filter = e.Value?.ToString();
+        if (_filter?.Length > 0)
         {
-            if (allResources != null) resources = allResources.Where(r => r.Name.Contains(filter)).ToList();
+            if (_allResources != null)
+			{
+ 				_resources = _allResources.Where(r => r.Name.Contains(_filter)).ToList();
+			}
         }
         else
         {
-            resources = null;
-            selectedResourceName = selectedResourcePrefix = null;
+           // _resources = null;
+           // _selectedResource = null;
         }
 
-        return Task.CompletedTask;
+       // return Task.CompletedTask;
     }
 
-    private void SelectResource(string resourcePrefix)
+    private void SelectResource(string query)
     {
-        if (allResources != null) selectedResourcePrefix = allResources.FirstOrDefault(r => r.Name.Contains(resourcePrefix))?.Prefix;
+        if (_allResources != null)
+        {
+            var foundResource = _allResources.Find(r => r.Name.Equals(query));
+            if (foundResource != null)
+            {
+                _selectedResource = foundResource;
+            }
+            else
+            {
+                _resources = _allResources.FindAll(r => r.Name.Contains(query) || r.Prefix.Contains(query));
+            }
+            
+       //     _resources = null;
+            // selectedResourcePrefix = allResources.FirstOrDefault(r => r.Prefix.Contains(resourcePrefix))?.Prefix;
+        }
+
+        //_filter = query;
     }
 }
 
 internal class Resource
 {
+
     public string Category { get; set; }
+    public string Icon { get; set; }
     public string Name { get; set; }
 
     public string NameSpace { get; set; }
     public string Prefix { get; set; }
+	public string Url { get; set; }
+
 }

@@ -1,99 +1,458 @@
 [
   {
     "Category": "AI + machine learning",
+    "Icon": "ai-machine-learning/10044-icon-service-Cognitive-Search.svg",
     "Name": "Azure Cognitive Search",
     "NameSpace": "Microsoft.Search/searchServices",
     "Prefix": "srch"
   },
   {
     "Category": "AI + machine learning",
+    "Icon": "",
     "Name": "Azure Cognitive Services",
     "NameSpace": "Microsoft.CognitiveServices/accounts",
     "Prefix": "cog"
   },
   {
     "Category": "AI + machine learning",
+    "Icon": "",
     "Name": "Azure Machine Learning workspace",
     "NameSpace": "Microsoft.MachineLearningServices/workspaces",
     "Prefix": "mlw"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Analysis Services server",
     "NameSpace": "Microsoft.AnalysisServices/servers",
     "Prefix": "as"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Databricks workspace",
     "NameSpace": "Microsoft.Databricks/workspaces",
     "Prefix": "dbw"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Data Explorer cluster",
     "NameSpace": "Microsoft.Kusto/clusters",
     "Prefix": "dec"
   },
-
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Data Explorer cluster",
     "NameSpace": "Microsoft.Kusto/clusters",
     "Prefix": "dedb"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Data Factory",
     "NameSpace": "Microsoft.DataFactory/factories",
     "Prefix": "adf"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Digital Twin instance",
     "NameSpace": "Microsoft.DigitalTwins/digitalTwinsInstances",
     "Prefix": "dt"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Stream Analytics",
     "NameSpace": "Microsoft.StreamAnalytics/cluster",
     "Prefix": "asa"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Synapse Analytics Workspaces",
     "NameSpace": "Microsoft.Synapse/workspaces",
     "Prefix": "synw"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Synapse Analytics SQL Dedicated Pool",
-    "NameSpace": "icrosoft.Synapse/workspaces/sqlPools",
+    "NameSpace": "Microsoft.Synapse/workspaces/sqlPools",
     "Prefix": "syndp"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Azure Synapse Analytics Spark Pool",
     "NameSpace": "Microsoft.Synapse/workspaces/sqlPools",
     "Prefix": "synsp"
   },
-
-
-
-
-
-
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Data Lake Store account",
+    "NameSpace": "Microsoft.DataLakeStore/accounts",
+    "Prefix": "dls"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Data Lake Analytics account",
+    "NameSpace": "Microsoft.DataLakeAnalytics/accounts",
+    "Prefix": "dla"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Event Hubs namespace",
+    "NameSpace": "Microsoft.EventHub/namespaces",
+    "Prefix": "evhns"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Event hub",
+    "NameSpace": "Microsoft.EventHub/namespaces/eventHubs",
+    "Prefix": "evh"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Event Grid domain",
+    "NameSpace": "Microsoft.EventGrid/domains",
+    "Prefix": "evgd"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Event Grid subscriptions",
     "NameSpace": "Microsoft.EventGrid/eventSubscriptions",
     "Prefix": "evgs"
   },
   {
     "Category": "Analytics and IoT",
+    "Icon": "",
     "Name": "Event Grid topic",
     "NameSpace": "Microsoft.EventGrid/domains/topics",
     "Prefix": "evgt"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Event Grid system topic",
+    "NameSpace": "Microsoft.EventGrid/systemTopics",
+    "Prefix": "evst"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "HDInsight - Hadoop cluster",
+    "NameSpace": "Microsoft.HDInsight/clusters",
+    "Prefix": "hadoop"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "HDInsight - HBase cluster",
+    "NameSpace": "Microsoft.HDInsight/clusters",
+    "Prefix": "hbase"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "HDInsight - Kafka cluster",
+    "NameSpace": "Microsoft.HDInsight/clusters",
+    "Prefix": "kafka"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "HDInsight - Spark cluster",
+    "NameSpace": "Microsoft.HDInsight/clusters",
+    "Prefix": "spark"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "HDInsight - Storm cluster",
+    "NameSpace": "Microsoft.HDInsight/clusters",
+    "Prefix": "storm"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "HDInsight - ML Services cluster",
+    "NameSpace": "Microsoft.HDInsight/clusters",
+    "Prefix": "mls"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "IoT hub",
+    "NameSpace": "Microsoft.Devices/IotHubs",
+    "Prefix": "iot"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Provisioning services",
+    "NameSpace": "Microsoft.Devices/provisioningServices",
+    "Prefix": "provs"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Provisioning services certificate",
+    "NameSpace": "Microsoft.Devices/provisioningServices/certificates",
+    "Prefix": "pcert"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Power BI Embedded",
+    "NameSpace": "Microsoft.PowerBIDedicated/capacities",
+    "Prefix": "pbi"
+  },
+  {
+    "Category": "Analytics and IoT",
+    "Icon": "",
+    "Name": "Time Series Insights environment",
+    "NameSpace": "Microsoft.TimeSeriesInsights/environments",
+    "Prefix": "tsi"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "App Service environment",
+    "NameSpace": "Microsoft.Web/hostingEnvironments",
+    "Prefix": "ase"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "App Service plan",
+    "NameSpace": "Microsoft.Web/serverFarms",
+    "Prefix": "asp"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Azure Load Testing instance",
+    "NameSpace": "Microsoft.LoadTestService/loadTests",
+    "Prefix": "lt"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Availability set",
+    "NameSpace": "Microsoft.Compute/availabilitySets",
+    "Prefix": "avail"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Azure Arc enabled server",
+    "NameSpace": "Microsoft.HybridCompute/machines",
+    "Prefix": "arcs"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Azure Arc enabled Kubernetes cluster",
+    "NameSpace": "Microsoft.Kubernetes/connectedClusters",
+    "Prefix": "arck"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Batch accounts",
+    "NameSpace": "Microsoft.Batch/batchAccounts",
+    "Prefix": "ba"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Cloud service",
+    "NameSpace": "Microsoft.Compute/cloudServices",
+    "Prefix": "cld"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Communication Services",
+    "NameSpace": "Microsoft.Communication/communicationServices",
+    "Prefix": "acs"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Disk encryption set",
+    "NameSpace": "Microsoft.Compute/diskEncryptionSets",
+    "Prefix": "des"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Function app",
+    "NameSpace": "Microsoft.Web/sites",
+    "Prefix": "func"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Gallery",
+    "NameSpace": "Microsoft.Compute/galleries",
+    "Prefix": "gal"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Hosting environment",
+    "NameSpace": "Microsoft.Web/hostingEnvironments",
+    "Prefix": "host"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Image template",
+    "NameSpace": "Microsoft.VirtualMachineImages/imageTemplates",
+    "Prefix": "it"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Managed disk (OS)",
+    "NameSpace": "Microsoft.Compute/disks",
+    "Prefix": "osdisk"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Managed disk (data)",
+    "NameSpace": "Microsoft.Compute/disks",
+    "Prefix": "disk"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Notification Hubs",
+    "NameSpace": "Microsoft.NotificationHubs/namespaces/notificationHubs",
+    "Prefix": "ntf"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Notification Hubs namespace",
+    "NameSpace": "Microsoft.NotificationHubs/namespaces",
+    "Prefix": "ntfs"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Proximity placement group",
+    "NameSpace": "Microsoft.Compute/proximityPlacementGroups",
+    "Prefix": "ppg"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Snapshot",
+    "NameSpace": "Microsoft.Compute/snapshots",
+    "Prefix": "snap"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Static web app",
+    "NameSpace": "Microsoft.Web/staticSites",
+    "Prefix": "stapp",
+    "Url": "https://learn.microsoft.com/en-us/azure/static-web-apps/get-started-portal"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Virtual machine",
+    "NameSpace": "Microsoft.Compute/virtualMachines",
+    "Prefix": "vm"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Virtual machine scale set",
+    "NameSpace": "Microsoft.Compute/virtualMachineScaleSets",
+    "Prefix": "vmss"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Virtual machine maintenance configuration",
+    "NameSpace": "Microsoft.Maintenance/maintenanceConfigurations",
+    "Prefix": "mc"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "VM storage account",
+    "NameSpace": "Microsoft.Storage/storageAccounts",
+    "Prefix": "stvm"
+  },
+  {
+    "Category": "Compute and Web",
+    "Icon": "",
+    "Name": "Web app",
+    "NameSpace": "Microsoft.Web/sites",
+    "Prefix": "app"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "AKS cluster",
+    "NameSpace": "Microsoft.ContainerService/managedClusters",
+    "Prefix": "aks"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "Container apps",
+    "NameSpace": "Microsoft.App/containerApps",
+    "Prefix": "ca"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "Container apps environment",
+    "NameSpace": "Microsoft.App/managedEnvironments",
+    "Prefix": "cae"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "Container registry",
+    "NameSpace": "Microsoft.ContainerRegistry/registries",
+    "Prefix": "cr"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "Container instance",
+    "NameSpace": "Microsoft.ContainerInstance/containerGroups",
+    "Prefix": "ci"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "Service Fabric cluster",
+    "NameSpace": "Microsoft.ServiceFabric/clusters",
+    "Prefix": "sf"
+  },
+  {
+    "Category": "Containers",
+    "Icon": "",
+    "Name": "Service Fabric managed cluster",
+    "NameSpace": "Microsoft.ServiceFabric/managedClusters",
+    "Prefix": "sfmc"
   }
 ]
